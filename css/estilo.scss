@@ -503,10 +503,56 @@ body{
     }//fim do grow
 
 
+  }//anuncio container
+}//fim do aside anuncios
 
+footer{
+  #rodape{
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 34px;
+    font-family:'Gotham', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+
+    #rodape-container{
+      display: flex;
+
+      .menu-footer{
+        align-self: center;
+        font-family: Gotham-Light, sans-serif;
+        font-style: normal;
+        float: left;
+        font-size: 100%;
+        font-size: 12px;
+
+        .btn-rodape{
+          padding: 0;
+          font-weight: inherit;
+        }
+        .btn-rodape:focus, .btn-rodape:active:focus, .btn-rodape.active:focus {
+          outline: 0 none;
+        }
+      }
+    }
+
+
+  }//fim do rodape
+
+  #barra-cinza {
+    height: 45px;
+    background-color: #F9F9F9;
   }
-}
-//
+}//foim do footer
+
+
+
+
+
+
+
 // .aparece{
 //
 //     z-index: 10;
@@ -537,26 +583,13 @@ body{
 //
 //
 //
-// #rodape{
-//     background-color: white;
-//     padding-top: 12px;
-//     padding-bottom: 20px;
-//     padding-left: 34px;
-//     font-family:'Gotham', sans-serif;
-//     font-weight: bold;
-//     font-style: italic;
-// }
+//
 //
 // #casa{
 //     float: left;
 //
 // }
-// .regulamento{
-//     font-family: Gotham-Light, sans-serif;
-//     font-style: normal;
-//     float: left;
-//
-// }
+
 //
 // a{
 //     color: #333;
@@ -575,14 +608,7 @@ body{
 //     text-decoration: underline;
 // }
 //
-// .btnrodape{
-//     padding: 0;
-//     font-weight: inherit;
-// }
-//
-// .btnrodape:focus, .btnrodape:active:focus, .btnrodape.active:focus {
-//     outline: 0 none;
-// }
+
 //
 // .modal-header{
 //     border: none;
@@ -630,31 +656,15 @@ body{
 //
 //
 //
-// /*rodape*/
 //
-// #rodape{
-//     background-color: white;
-//  /*   padding-top: 12px;
-//     padding-bottom: 20px;
-//     padding-left: 34px;*/
-//     font-family:'Gotham', sans-serif;
-//     font-weight: bold;
-//     font-style: italic;
-//     padding: 2%;
-// }
+//
+//
 //
 // #casa{
 //     float: left;
 //
 // }
-// .regulamento{
-//     font-family: Gotham-Light, sans-serif;
-//     font-style: normal;
-//     float: left;
-//     font-size: 100%;
-//     font-size: 12px;
-//
-// }
+
 //
 // a{
 //     color: #333;
@@ -673,19 +683,10 @@ body{
 //     text-decoration: underline;
 // }
 //
-// .btnrodape{
-//     padding: 0;
-//     font-weight: inherit;
-// }
+
 //
-// .btnrodape:focus, .btnrodape:active:focus, .btnrodape.active:focus {
-//     outline: 0 none;
-// }
-//
-// .centraliza{
-//     text-align: center;
-// }
-// /*rodape*/
+
+
 //
 //
 // /*----------- PAGINA DETALHE IMOVEL ------------*/
@@ -935,19 +936,7 @@ body{
 //
 //
 //
-// @media screen and (max-width: 999px) {
-//     #barracinza {
-//     height: 55px;
-//     background-color: #F9F9F9;
-//     }
-// }
-//
-// @media screen and (min-width: 1000px) {
-//     #barracinza {
-//     height: 45px;
-//     background-color: #F9F9F9;
-//     }
-// }
+
 //
 // /*********---- CURVAS CSS  ----**********/
 // /*********---- CURVAS CSS  ----**********/

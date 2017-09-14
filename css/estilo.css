@@ -386,4 +386,31 @@ body {
           opacity: 1;
           z-index: 1; }
 
+footer #rodape {
+  background-color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 34px;
+  font-family: 'Gotham', sans-serif;
+  text-align: center;
+  font-weight: bold;
+  font-style: italic; }
+  footer #rodape #rodape-container {
+    display: flex; }
+    footer #rodape #rodape-container .menu-footer {
+      align-self: center;
+      font-family: Gotham-Light, sans-serif;
+      font-style: normal;
+      float: left;
+      font-size: 100%;
+      font-size: 12px; }
+      footer #rodape #rodape-container .menu-footer .btn-rodape {
+        padding: 0;
+        font-weight: inherit; }
+      footer #rodape #rodape-container .menu-footer .btn-rodape:focus, footer #rodape #rodape-container .menu-footer .btn-rodape:active:focus, footer #rodape #rodape-container .menu-footer .btn-rodape.active:focus {
+        outline: 0 none; }
+footer #barra-cinza {
+  height: 45px;
+  background-color: #F9F9F9; }
+
 /*# sourceMappingURL=estilo.css.map */

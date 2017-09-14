@@ -19,19 +19,19 @@
 
 
   <!--Start of Zopim Live Chat Script-->
-  <!-- <script type="text/javascript">
+  <script type="text/javascript">
     window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
     d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
     _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
     $.src="//v2.zopim.com/?3qLR0ijii6Ks2GWxLEbhqt0N22k4RsAW";z.t=+new Date;$.
     type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
-  </script> -->
+  </script>
   <!--End of Zopim Live Chat Script-->
 
   <script>
-    // $zopim(function() {
-    //   $zopim.livechat.button.setPositionMobile('bl');
-    // });
+    $zopim(function() {
+      $zopim.livechat.button.setPositionMobile('bl');
+    });
   </script>
 
   <script>
@@ -161,6 +161,28 @@
 
 </div><!-- corpo -->
 
+<footer class="row"><!--row do rodape-->
+  <div id="rodape" class="row col-md-12"><!--rodape-->
+    <div id="rodape-container" class="row">
+      <div class="col-md-4 ">
+        REALIZAÇÃO
+          <img width="25%" src="img/aljos2.png">
+          <img width="30%" src="img/teto2.png">
+      </div>
+      <div class="col-md-8 col-xs-12 menu-footer">
+        <img src="img/casa.png">
+        <a href="#myModalReg" role="button" class="btn-rodape" data-toggle="modal">REGULAMENTO</a>
+        &#x25cf;
+        <a href="#myModalTer" role="button" class="btn-rodape" data-toggle="modal">TERMOS E CONDIÇÕES</a>
+        &#x25cf;
+        <a href="#myModalPol" role="button" class="btn-rodape" data-toggle="modal">POLÍTICA DE PRIVACIDADE</a>
+      </div>
+    </div>
+  </div><!--rodape-->
+  <div id="barra-cinza" class="row col-md-12">
+  </div>
+</footer>
+
 
 
 
@@ -267,27 +289,7 @@
 <!-- modal -->
 
 
-<footer class="row"><!--row do rodape-->
-  <div id="rodape" class="row col-md-12 nopad"><!--rodape-->
-    <div class="col-md-4 centraliza">
-      REALIZAÇÃO
-        <img width="25%" src="img/aljos2.png">
-        <img width="30%" src="img/teto2.png">
-    </div>
-    <div class="col-md-8 col-xs-12 regulamento centraliza">
-      <img src="img/casa.png">
-      <a href="#myModalReg" role="button" class="btnrodape" data-toggle="modal">REGULAMENTO</a>
-      &#x25cf;
-      <a href="#myModalTer" role="button" class="btnrodape" data-toggle="modal">TERMOS E CONDIÇÕES</a>
-      &#x25cf;
-      <a href="#myModalPol" role="button" class="btnrodape" data-toggle="modal">POLÍTICA DE PRIVACIDADE</a>
-    </div>
-  </div><!--rodape-->
-</footer>
 
-    <div id="barracinza" class="row col-md-12">
-      <br>
-    </div>
 
     <script>
       function outputUpdate(vol) {
