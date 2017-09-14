@@ -19,128 +19,208 @@ body {
     padding: 0;
     margin: 0;
     max-width: 100%; }
-    body .corpo #side-menu {
-      position: relative;
-      z-index: 20;
-      background: -webkit-radial-gradient(60% 55%, closest-corner, #EF9601, #ef9601);
-      /* Safari 5.1 to 6.0 */
-      background: -o-radial-gradient(60% 55%, closest-corner, #EF9601, #ef9601);
-      /* For Opera 11.6 to 12.0 */
-      background: -moz-radial-gradient(60% 55%, closest-corner, #EF9601, #ef9601);
-      /* For Firefox 3.6 to 15 */
-      background: radial-gradient(closest-corner at 60% 55%, #EF9601, #ef9601);
-      /* Standard syntax (must be last) */
-      -webkit-box-shadow: 7px 2px 10px 1px rgba(50, 50, 50, 0.41);
-      -moz-box-shadow: 7px 2px 10px 1px rgba(50, 50, 50, 0.41);
-      box-shadow: 7px 2px 10px 1px rgba(50, 50, 50, 0.41);
-      min-height: 100vh;
-      padding: 0;
-      overflow: hidden;
-      text-align: center; }
-      body .corpo #side-menu hr {
-        display: block;
-        width: 90%;
-        margin-top: 0.5em;
-        margin-bottom: 0.5em;
-        margin-left: auto;
-        margin-right: auto;
-        border-style: inset;
-        border-width: 1px;
-        border-color: #ffac18; }
-      body .corpo #side-menu #logo {
-        width: 100%; }
-      body .corpo #side-menu #banner1-aside {
-        max-width: 100%;
-        width: 100%; }
-      body .corpo #side-menu #filtro {
-        margin-top: 15px;
-        font-family: Gotham-Light; }
-        body .corpo #side-menu #filtro #valor {
-          text-align: right;
-          font-family: Gotham-Light;
-          font-style: italic;
-          font-weight: normal;
-          font-size: 14px;
-          text-align: right;
-          display: inline;
-          color: #333; }
-          body .corpo #side-menu #filtro #valor p {
-            display: inline; }
-          body .corpo #side-menu #filtro #valor output {
-            display: inline;
-            font-size: 14px;
-            color: #333; }
-        body .corpo #side-menu #filtro #fader {
-          background-color: #ef9601;
-          height: 20px; }
-        body .corpo #side-menu #filtro .labelselect {
-          padding-right: 10px;
-          font-family: Gotham-Bold; }
-        body .corpo #side-menu #filtro .form-group {
-          text-align: left; }
-          body .corpo #side-menu #filtro .form-group .selectfiltro {
-            max-width: 92%;
-            float: left;
-            font-family: Gotham-Light;
-            font-style: italic;
-            font-size: 11px;
-            border-radius: 15px;
-            height: 23px;
-            padding: 1px 2px; }
-        body .corpo #side-menu #filtro .check-imovel {
-          max-width: 100%;
-          text-align: left;
-          font-family: Gotham-Light;
-          font-style: italic;
-          font-size: 13px;
-          margin: 5px 0; }
-        body .corpo #side-menu #filtro #botao-filtro-container {
-          padding-top: 2px; }
-          body .corpo #side-menu #filtro #botao-filtro-container .btnbuscar {
-            color: #ffffff;
-            border-radius: 15px;
-            text-transform: uppercase;
-            font-family: Gotham-Bold;
-            font-style: normal;
-            background-color: #428BCA;
-            background-image: linear-gradient(to bottom, #2b9de9, #2e519b);
-            border-color: #2B669A #2B669A #2B669A;
-            transition: all 0.8s ease-out 0s; }
-            body .corpo #side-menu #filtro #botao-filtro-container .btnbuscar:hover {
-              color: #ffffff;
-              background: #2e519b;
-              border-color: #2B669A #2B669A #2B669A; }
-      body .corpo #side-menu .calendar-area {
-        max-width: 100%;
-        width: 100%;
-        padding-top: 12px;
-        margin-bottom: 25px;
-        font-style: italic;
-        font-size: 11px; }
-      body .corpo #side-menu .btn-corretor-container {
-        margin-bottom: 50px;
-        margin-top: 15px; }
-        body .corpo #side-menu .btn-corretor-container .btn-corretor {
-          text-transform: uppercase;
-          font-family: Gotham-Bold;
-          font-style: normal;
-          color: #ffffff;
-          border-radius: 35px;
-          background-color: #428BCA;
-          background-image: linear-gradient(to bottom, #2b9de9, #2e519b);
-          border-color: #2B669A #2B669A #2B669A;
-          transition: all 0.8s ease-out 0s; }
-          body .corpo #side-menu .btn-corretor-container .btn-corretor:hover {
-            background: #2e519b; }
-          body .corpo #side-menu .btn-corretor-container .btn-corretor p {
-            margin: 5px; }
-      body .corpo #side-menu #elementofiltro2 {
-        max-width: 100%;
-        width: 80%;
-        padding-top: 3%;
+
+#side-menu {
+  position: relative;
+  z-index: 20;
+  background: -webkit-radial-gradient(60% 55%, closest-corner, #EF9601, #ef9601);
+  /* Safari 5.1 to 6.0 */
+  background: -o-radial-gradient(60% 55%, closest-corner, #EF9601, #ef9601);
+  /* For Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(60% 55%, closest-corner, #EF9601, #ef9601);
+  /* For Firefox 3.6 to 15 */
+  background: radial-gradient(closest-corner at 60% 55%, #EF9601, #ef9601);
+  /* Standard syntax (must be last) */
+  -webkit-box-shadow: 7px 2px 10px 1px rgba(50, 50, 50, 0.41);
+  -moz-box-shadow: 7px 2px 10px 1px rgba(50, 50, 50, 0.41);
+  box-shadow: 7px 2px 10px 1px rgba(50, 50, 50, 0.41);
+  min-height: 100vh;
+  padding: 0;
+  overflow: hidden;
+  text-align: center; }
+  #side-menu hr {
+    display: block;
+    width: 90%;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    border-color: #ffac18; }
+  #side-menu #logo {
+    width: 100%; }
+  #side-menu #banner1-aside {
+    max-width: 100%;
+    width: 100%; }
+  #side-menu #filtro {
+    margin-top: 15px;
+    font-family: Gotham-Light; }
+    #side-menu #filtro #valor {
+      text-align: right;
+      font-family: Gotham-Light;
+      font-style: italic;
+      font-weight: normal;
+      font-size: 14px;
+      text-align: right;
+      display: inline;
+      color: #333; }
+      #side-menu #filtro #valor p {
+        display: inline; }
+      #side-menu #filtro #valor output {
+        display: inline;
+        font-size: 14px;
+        color: #333; }
+    #side-menu #filtro #fader {
+      background-color: #ef9601;
+      height: 20px; }
+    #side-menu #filtro .labelselect {
+      padding-right: 10px;
+      font-family: Gotham-Bold; }
+    #side-menu #filtro .form-group {
+      text-align: left; }
+      #side-menu #filtro .form-group .selectfiltro {
+        max-width: 92%;
+        float: left;
         font-family: Gotham-Light;
         font-style: italic;
-        font-size: 11px; }
+        font-size: 11px;
+        border-radius: 15px;
+        height: 23px;
+        padding: 1px 2px; }
+    #side-menu #filtro .check-imovel {
+      max-width: 100%;
+      text-align: left;
+      font-family: Gotham-Light;
+      font-style: italic;
+      font-size: 13px;
+      margin: 5px 0; }
+    #side-menu #filtro #botao-filtro-container {
+      padding-top: 2px; }
+      #side-menu #filtro #botao-filtro-container .btnbuscar {
+        color: #ffffff;
+        border-radius: 15px;
+        text-transform: uppercase;
+        font-family: Gotham-Bold;
+        font-style: normal;
+        background-color: #428BCA;
+        background-image: linear-gradient(to bottom, #2b9de9, #2e519b);
+        border-color: #2B669A #2B669A #2B669A;
+        transition: all 0.8s ease-out 0s; }
+        #side-menu #filtro #botao-filtro-container .btnbuscar:hover {
+          color: #ffffff;
+          background: #2e519b;
+          border-color: #2B669A #2B669A #2B669A; }
+  #side-menu .calendar-area {
+    max-width: 100%;
+    width: 100%;
+    padding-top: 12px;
+    margin-bottom: 25px;
+    font-style: italic;
+    font-size: 11px; }
+  #side-menu .btn-corretor-container {
+    margin-bottom: 50px;
+    margin-top: 15px; }
+    #side-menu .btn-corretor-container .btn-corretor {
+      text-transform: uppercase;
+      font-family: Gotham-Bold;
+      font-style: normal;
+      color: #ffffff;
+      border-radius: 35px;
+      background-color: #428BCA;
+      background-image: linear-gradient(to bottom, #2b9de9, #2e519b);
+      border-color: #2B669A #2B669A #2B669A;
+      transition: all 0.8s ease-out 0s; }
+      #side-menu .btn-corretor-container .btn-corretor:hover {
+        background: #2e519b; }
+      #side-menu .btn-corretor-container .btn-corretor p {
+        margin: 5px; }
+  #side-menu #elementofiltro2 {
+    max-width: 100%;
+    width: 80%;
+    padding-top: 3%;
+    font-family: Gotham-Light;
+    font-style: italic;
+    font-size: 11px; }
+
+#anuncios {
+  padding: 0; }
+  #anuncios .anuncio-container {
+    padding: 0;
+    background: #00659b;
+    overflow: hidden;
+    text-align: center; }
+    #anuncios .anuncio-container .grow {
+      -webkit-transition: .3s ease-in-out;
+      transition: .3s ease-in-out; }
+      #anuncios .anuncio-container .grow:hover {
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1); }
+        #anuncios .anuncio-container .grow:hover .img-anuncio {
+          opacity: 0.1; }
+        #anuncios .anuncio-container .grow:hover .legenda {
+          opacity: 0; }
+        #anuncios .anuncio-container .grow:hover .oferta {
+          position: absolute;
+          top: 25%;
+          width: 100%;
+          opacity: 1;
+          z-index: 1; }
+    #anuncios .anuncio-container .img-anuncio {
+      max-width: 100%;
+      width: 100%;
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-transition: .3s ease-in-out;
+      transition: .3s ease-in-out; }
+    #anuncios .anuncio-container .legenda {
+      position: absolute;
+      color: white;
+      left: 0%;
+      top: 75%;
+      width: 100%;
+      -webkit-transition: .3s ease-in-out;
+      transition: .3s ease-in-out; }
+      #anuncios .anuncio-container .legenda img {
+        max-width: 110%;
+        height: 110%;
+        width: 97%;
+        float: left; }
+      #anuncios .anuncio-container .legenda .txt-imovel-container {
+        font-family: 'felipe';
+        position: absolute;
+        color: #1b2937;
+        height: 100%;
+        width: 90%;
+        padding-top: 3%;
+        padding-bottom: 2%; }
+        #anuncios .anuncio-container .legenda .txt-imovel-container .tipo {
+          font-family: Gotham-Bold;
+          font-size: 80%;
+          text-align: left;
+          width: 100%;
+          float: left;
+          padding-left: 6.8%;
+          height: 10%; }
+        #anuncios .anuncio-container .legenda .txt-imovel-container .nome {
+          font-family: Gotham-Bold;
+          text-align: left;
+          font-size: 145%;
+          width: 100%;
+          float: left;
+          padding-left: 7%;
+          padding-top: 4px;
+          height: 10%; }
+    #anuncios .anuncio-container .oferta {
+      position: absolute;
+      top: 15%;
+      width: 100%;
+      opacity: 0;
+      z-index: -1;
+      -webkit-transition: .8s ease-in-out;
+      transition: .8s ease-in-out; }
 
 .row {
   margin: 0px; }
@@ -172,80 +252,12 @@ body {
   text-decoration: none;
   max-width: 50%; }
 
-/*.btn:hover{
-    color: white;
-    text-decoration: none;
-}*/
-.tamanhofiltro {
-  height: 2919px; }
-
-.nopadoverflow {
-  padding: 0;
-  background: #00659b;
-  overflow: hidden;
-  text-align: center; }
-
 body {
   background-color: #ecedee; }
-
-.grow {
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out; }
-
-.grow:hover {
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1); }
 
 .cresce {
   -webkit-transform: scale(1.1);
   transform: scale(1.1); }
-
-.grow:hover .imganuncio {
-  opacity: 0.1; }
-
-.grow:hover .legenda {
-  opacity: 0; }
-
-.grow:hover .oferta {
-  position: absolute;
-  top: 25%;
-  width: 100%;
-  opacity: 1;
-  z-index: 1; }
-
-.imganuncio {
-  max-width: 100%;
-  width: 100%;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out; }
-
-.legenda {
-  position: absolute;
-  color: white;
-  left: 0%;
-  top: 75%;
-  width: 100%;
-  -webkit-transition: .5s ease-in-out;
-  transition: .5s ease-in-out; }
-
-.legenda img {
-  max-width: 110%;
-  height: 110%;
-  width: 97%;
-  float: left; }
-
-.oferta {
-  position: absolute;
-  top: 15%;
-  width: 100%;
-  opacity: 0;
-  z-index: -1;
-  -webkit-transition: .8s ease-in-out;
-  transition: .8s ease-in-out; }
 
 .aparece {
   z-index: 10;
@@ -261,34 +273,6 @@ body {
 .desaparece {
   opacity: 0;
   z-index: -1; }
-
-.txtimovel {
-  font-family: 'felipe';
-  position: absolute;
-  color: #1b2937;
-  height: 100%;
-  width: 90%;
-  padding-top: 3%;
-  padding-bottom: 2%; }
-
-.tipo {
-  font-family: Gotham-Bold;
-  font-size: 80%;
-  text-align: left;
-  width: 100%;
-  float: left;
-  padding-left: 6.8%;
-  height: 10%; }
-
-.nome {
-  font-family: Gotham-Bold;
-  text-align: left;
-  font-size: 145%;
-  width: 100%;
-  float: left;
-  padding-left: 7%;
-  padding-top: 4px;
-  height: 10%; }
 
 /* -----------   input slider Range   ----------- */
 /*http://danielstern.ca/range.css/#/*/
