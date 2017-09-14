@@ -16,19 +16,19 @@
   <link rel="icon" href="img/fav2.png" />
 
   <!--Start of Zopim Live Chat Script-->
-  <script type="text/javascript">
+  <!-- <script type="text/javascript">
     window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
     d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
     _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
     $.src="//v2.zopim.com/?3qLR0ijii6Ks2GWxLEbhqt0N22k4RsAW";z.t=+new Date;$.
     type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
-  </script>
+  </script> -->
   <!--End of Zopim Live Chat Script-->
 
   <script>
-    $zopim(function() {
-      $zopim.livechat.button.setPositionMobile('bl');
-    });
+    // $zopim(function() {
+    //   $zopim.livechat.button.setPositionMobile('bl');
+    // });
   </script>
 
   <script>
@@ -42,313 +42,246 @@
 </head>
 <body>
 
-<div class="corpo">
-    <aside id="side-menu" class="col-md-3">
-      <a href="#"><img class="center-block tamanhomaximo" id="logo" src="img/logo2.png"></a>
-      <img class="" id="banner1-aside" src="img/elemento.png">
+<div class="corpo col-md-12">
+  <aside id="side-menu" class="col-md-3">
+    <a href="#"><img class="center-block tamanhomaximo" id="logo" src="img/logo2.png"></a>
+    <img class="" id="banner1-aside" src="img/elemento.png">
+    <div class="col-md-12" id="filtro">
+      <div class="col-xs-2 col-md-2 labelselect">
+          Valor:
+      </div>
+      <div id="valor" class="col-md-10">
+          <p>R$ 100.000 à</p>
+          <output class="" for="fader" id="volume">R$ 100.000</output>
+      </div>
+      <div class="col-md-12">
+        <input type="range" min="500" max="4000000" value="100000" id="fader" name="valmax" step="100" oninput="outputUpdate(value)">
+      </div>
 
-      <div class="col-md-12" id="filtro">
-        <div class="col-xs-2 col-md-2 labelselect">
-            Valor:
-        </div>
-        <div id="valor" class="col-md-10">
-            <p>R$ 100.000 à</p>
-            <output class="" for="fader" id="volume">R$ 100.000</output>
-        </div>
-        <div class="col-md-12">
-          <input type="range" min="500" max="4000000" value="100000" id="fader" name="valmax" step="100" oninput="outputUpdate(value)">
-        </div>
+      <div class="col-xs-12 col-md-6 form-group">
+        <label class=" labelselect" for="qto">Quartos:</label>
+        <select name="qto" class="selectfiltro form-control " id="qto">
+          <option value="0">Sem quarto(Terreno)</option>
+          <option value="1">1 Quarto</option>
+          <option value="2">2 Quartos</option>
+          <option value="3">3 Quartos</option>
+          <option value="4">4 Quartos</option>
+          <option value="5">5 Quartos</option>
+        </select>
+      </div>
 
-        <div class="col-xs-12 col-md-6 form-group">
-          <label class=" labelselect" for="qto">Quartos:</label>
-          <select name="qto" class="selectfiltro form-control " id="qto">
-            <option value="0">Sem quarto(Terreno)</option>
-            <option value="1">1 Quarto</option>
-            <option value="2">2 Quartos</option>
-            <option value="3">3 Quartos</option>
-            <option value="4">4 Quartos</option>
-            <option value="5">5 Quartos</option>
-          </select>
+      <div class="col-xs-12 col-md-6 form-group">
+        <label class=" labelselect" for="bairro">Bairro:</label>
+        <select class="selectfiltro form-control " id="bairro" name="bairro">
+          <option>Ponta verde</option>
+          <option>Jatiúca</option>
+        </select>
+      </div>
+
+      <div class="col-xs-12 col-md-12 check-imovel ">
+
+        <label class="checkbox-inline">
+          <input type="checkbox" name="piscina" value="s">
+            Piscina
+        </label>
+        <label class="checkbox-inline">
+          <input type="checkbox" name="salao" value="s">
+            Salão de festas
+        </label>
+        <label class="checkbox-inline">
+          <input type="checkbox" name="academia" value="s">
+            Academia
+        </label>
+
+      </div>
+
+      <div class="col-xs-12 col-md-12" id="botao-filtro-container">
+        <div class="col-md-6 ">
         </div>
-
-        <div class="col-xs-12 col-md-6 form-group">
-          <label class=" labelselect" for="bairro">Bairro:</label>
-          <select class="selectfiltro form-control " id="bairro" name="bairro">
-            <option>Ponta verde</option>
-            <option>Jatiúca</option>
-          </select>
-        </div>
-
-        <div class="col-xs-12 col-md-12 check-imovel ">
-
-          <label class="checkbox-inline">
-            <input type="checkbox" name="piscina" value="s">
-              Piscina
-          </label>
-          <label class="checkbox-inline">
-            <input type="checkbox" name="salao" value="s">
-              Salão de festas
-          </label>
-          <label class="checkbox-inline">
-            <input type="checkbox" name="academia" value="s">
-              Academia
-          </label>
-
-        </div>
-
-        <div class="col-xs-12 col-md-12" id="botao-filtro-container">
-          <div class="col-md-6 ">
-          </div>
-          <div class="col-md-6">
-              <div class="form-group">
-                <button type="" class="btnbuscar btn btn-block">Buscar</button>
-              </div>
-          </div>
-        </div>
-
-      </div> <!-- Filtro -->
-      <br><hr>
-      <div class="col-md-12 calendar-area">
-        <div id="calendario" class="col-md-4">
-          <img class="img-responsive" src="img/calendario.png">
-        </div>
-        <div class="col-md-8 sempadding">
-          <img class="img-responsive" src="img/descontosimperdiveis.png">
+        <div class="col-md-6">
+            <div class="form-group">
+              <button type="" class="btnbuscar btn btn-block">Buscar</button>
+            </div>
         </div>
       </div>
 
-      <hr>
-
-      <div class="col-md-12 btn-corretor-container">
-          <div class="form-group">
-            <button type="" class="btn-corretor btn btn-block">
-              <p class="">FALE AGORA COM CORRETOR</p>
-              <p class="">CHAT AO VIVO</p>
-            </button>
-          </div>
+    </div> <!-- Filtro -->
+    <br><hr>
+    <div class="col-md-12 calendar-area">
+      <div id="calendario" class="col-md-4">
+        <img class="img-responsive" src="img/calendario.png">
       </div>
+      <div class="col-md-8 sempadding">
+        <img class="img-responsive" src="img/descontosimperdiveis.png">
+      </div>
+    </div>
+    <hr>
+    <div class="col-md-12 btn-corretor-container">
+        <div class="form-group">
+          <button type="" class="btn-corretor btn btn-block">
+            <p class="">FALE AGORA COM CORRETOR</p>
+            <p class="">CHAT AO VIVO</p>
+          </button>
         </div>
-    </aside>
+    </div>
+  </aside>
 
     <!-- coluna 9 direita-->
-    <main id="anuncios" class="col-md-9" >
+  <main id="anuncios" class="col-md-9" >
+    <!-- anuncio individual-->
+    <div class="col-md-4 anuncio-container">
+        <div class="grow">
+            <a href="detalheimovel.html">
+              <img class="img-anuncio" src="http://1.bp.blogspot.com/_zZSxcEzfHMc/THr5RAlM9ZI/AAAAAAAAAIs/UfNNqXmxMvw/s1600/PREDIO1.jpg" alt="portrait">
+              <div class="legenda">
+                <div>
+                  <img src="img/elementolegenda.png">
+                </div>
 
-        <!-- anuncio individual-->
-        <div class="col-md-4 anuncio-container">
-            <div class="grow">
-                <a href="detalheimovel.html">
-                  <img class="img-anuncio" src="http://1.bp.blogspot.com/_zZSxcEzfHMc/THr5RAlM9ZI/AAAAAAAAAIs/UfNNqXmxMvw/s1600/PREDIO1.jpg" alt="portrait">
-                  <div class="legenda">
-                    <div>
-                      <img src="img/elementolegenda.png">
-                    </div>
+                <div class="txt-imovel-container">
+                  <div class="tipo">Residencial</div>
+                  <div class="nome">Premiatto</div>
+                </div>
 
-                    <div class="txt-imovel-container">
-                      <div class="tipo">Residencial</div>
-                      <div class="nome">Premiatto</div>
-                    </div>
-
-                  </div>
-
-                  <div class="oferta">
-                    <div class="dez">10%</div>
-                    <div class="de">de desconto</div>
-                    <div class="botao center-block">Clique aqui e saiba mais!</div>
-                  </div>
-                </a>
-            </div>
-        </div>
-        <!-- anuncio individual-->
-
-
-
-
-
-
-
-
-
-        <!-- modal -->
-<div id="myModalReg" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-
-        <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-
-      </div>
-      <div class="modal-body">
-
-          <div class="row">
-              <div class="col-md-12">
-              <img class="casamodal" src="img/casamodal.png">
               </div>
-          </div>
 
-          </div>
-        <div class="row">
-            <div class="col-md-12 txtmodal">
-                <h3>Regulamento</h3>
-                <?php
-                $array_info = listaInfo($conexao);
-                foreach($array_info as $info) { ?>
-
-                    <p><?=$info['regulamento']?></p>
-
-                <?php } ?>
-
-            </div>
-        </div>
-
-
-
-         <div class="row">
-            <div class="col-md-12 botoesmodal">
-                <!--<img src="img/print.png">
-                <img src="img/download.png">-->
-            </div>
-        </div>
-
-      </div>
-    </div>
-  </div> <!-- modal -->
-
-
-
-                <!-- modal -->
-<div id="myModalTer" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-
-        <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-
-      </div>
-      <div class="modal-body">
-
-          <div class="row">
-              <div class="col-md-12">
-              <img class="casamodal" src="img/casamodal.png">
+              <div class="oferta">
+                <div class="desconto-oferta">10%</div>
+                <div class="legenda-oferta">de desconto</div>
+                <div class="botao-oferta center-block">Clique aqui e saiba mais!</div>
               </div>
-          </div>
-
-          </div>
-        <div class="row">
-            <div class="col-md-12 txtmodal">
-                <h3>Termos de Uso</h3>
-                <?php
-                $array_info = listaInfo($conexao);
-                foreach($array_info as $info) { ?>
-
-                    <p><?=$info['termos']?></p>
-
-                <?php } ?>
-
-            </div>
+            </a>
         </div>
-
-
-
-        <div class="row">
-            <div class="col-md-12 botoesmodal">
-                <!--<img src="img/print.png">
-                <img src="img/download.png">-->
-            </div>
-        </div>
-
-      </div>
     </div>
-  </div> <!-- modal -->
-
-
-                <!-- modal -->
-<div id="myModalPol" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-
-        <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-
-      </div>
-      <div class="modal-body">
-
-          <div class="row">
-              <div class="col-md-12">
-              <img class="casamodal" src="img/casamodal.png">
-              </div>
-          </div>
-
-          </div>
-        <div class="row">
-            <div class="col-md-12 txtmodal">
-                <h3>Política de Privacidade</h3>
-                <?php
-                $array_info = listaInfo($conexao);
-                foreach($array_info as $info) { ?>
-
-                    <p><?=$info['politica']?></p>
-
-                <?php } ?>
-
-            </div>
-        </div>
-
-
-        <div class="row">
-            <div class="col-md-12 botoesmodal">
-                <!--<img src="img/print.png">
-                <img src="img/download.png">-->
-            </div>
-        </div>
-
-      </div>
-    </div>
-  </div> <!-- modal -->
-
-
-
-
-
-
-</main><!-- coluna 9 direita -->
-
-
-
-</div><!-- row do corpo -->
-
-
-  <!-- Large modal -->
-
+    <!-- anuncio individual-->
+  </main><!-- coluna 9 direita -->
 
 </div><!-- corpo -->
 
-<div class="row"><!--row do rodape-->
-  <div id="rodape" class="row col-md-12 nopad"><!--rodape-->
-          <div class="col-md-4 centraliza">
-            REALIZAÇÃO
-              <img width="25%" src="img/aljos2.png">
-              <img width="30%" src="img/teto2.png">
+
+
+
+
+
+
+<!-- <div id="myModalReg" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-12">
+            <img class="casamodal" src="img/casamodal.png">
           </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 txtmodal">
+          <h3>Regulamento</h3>
+        </div>
+      </div>
 
-            <div class="col-md-8 col-xs-12 regulamento centraliza">
+      <div class="row">
+        <div class="col-md-12 botoesmodal">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>  -->
+<!-- modal -->
 
 
-                  <img src="img/casa.png">
 
-                  <a href="#myModalReg" role="button" class="btnrodape" data-toggle="modal">REGULAMENTO</a>
+<!-- modal -->
+<!-- <div id="myModalTer" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
 
-                  &#x25cf;
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-12">
+            <img class="casamodal" src="img/casamodal.png">
+          </div>
+        </div>
+      </div>
 
-                  <a href="#myModalTer" role="button" class="btnrodape" data-toggle="modal">TERMOS E CONDIÇÕES</a>
+      <div class="row">
+        <div class="col-md-12 txtmodal">
+          <h3>Termos de Uso</h3>
+        </div>
+      </div>
 
-                  &#x25cf;
+      <div class="row">
+        <div class="col-md-12 botoesmodal">
+        </div>
+      </div>
 
-                    <a href="#myModalPol" role="button" class="btnrodape" data-toggle="modal">POLÍTICA DE PRIVACIDADE</a>
+    </div>
+  </div>
+</div> -->
+<!-- modal -->
+
+
+          <!-- modal -->
+      <!-- <div id="myModalPol" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+
+              <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
             </div>
+            <div class="modal-body">
+
+                <div class="row">
+                    <div class="col-md-12">
+                    <img class="casamodal" src="img/casamodal.png">
+                    </div>
+                </div>
+
+                </div>
+              <div class="row">
+                  <div class="col-md-12 txtmodal">
+                      <h3>Política de Privacidade</h3>
+                  </div>
+              </div>
+
+              <div class="row">
+                  <div class="col-md-12 botoesmodal">
+
+                  </div>
+              </div>
+
+            </div>
+          </div>
+        </div>  -->
+<!-- modal -->
 
 
-    </div><!--rodape-->
-</div><!--row do rodape-->
+<footer class="row"><!--row do rodape-->
+  <div id="rodape" class="row col-md-12 nopad"><!--rodape-->
+    <div class="col-md-4 centraliza">
+      REALIZAÇÃO
+        <img width="25%" src="img/aljos2.png">
+        <img width="30%" src="img/teto2.png">
+    </div>
+    <div class="col-md-8 col-xs-12 regulamento centraliza">
+      <img src="img/casa.png">
+      <a href="#myModalReg" role="button" class="btnrodape" data-toggle="modal">REGULAMENTO</a>
+      &#x25cf;
+      <a href="#myModalTer" role="button" class="btnrodape" data-toggle="modal">TERMOS E CONDIÇÕES</a>
+      &#x25cf;
+      <a href="#myModalPol" role="button" class="btnrodape" data-toggle="modal">POLÍTICA DE PRIVACIDADE</a>
+    </div>
+  </div><!--rodape-->
+</footer>
+
     <div id="barracinza" class="row col-md-12">
       <br>
     </div>
