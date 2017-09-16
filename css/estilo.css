@@ -19,7 +19,8 @@ body {
   body .corpo {
     padding: 0;
     margin: 0;
-    max-width: 100%; }
+    max-width: 100%;
+    display: flex; }
 
 #side-menu {
   position: relative;
@@ -55,7 +56,7 @@ body {
     max-width: 100%;
     width: 100%; }
   #side-menu #filtro {
-    margin-top: 15px;
+    margin-top: 35px;
     font-family: Gotham-Light;
     /* -----------   input slider Range   ----------- */
     /*http://danielstern.ca/range.css/#/*/
@@ -244,7 +245,8 @@ body {
       font-size: 13px;
       margin: 5px 0; }
     #side-menu #filtro #botao-filtro-container {
-      padding-top: 2px; }
+      margin-top: 15px;
+      padding-right: 0; }
       #side-menu #filtro #botao-filtro-container .btnbuscar {
         color: #ffffff;
         border-radius: 15px;
@@ -254,7 +256,7 @@ body {
         background-color: #428BCA;
         background-image: linear-gradient(to bottom, #2b9de9, #2e519b);
         border-color: #2B669A #2B669A #2B669A;
-        transition: all 0.8s ease-out 0s; }
+        transition: all 0.1s ease-out 0s; }
         #side-menu #filtro #botao-filtro-container .btnbuscar:hover {
           color: #ffffff;
           background: #2e519b;
@@ -262,8 +264,8 @@ body {
   #side-menu .calendar-area {
     max-width: 100%;
     width: 100%;
-    padding-top: 12px;
-    margin-bottom: 25px;
+    margin-top: 25px;
+    margin-bottom: 35px;
     font-style: italic;
     font-size: 11px; }
   #side-menu .btn-corretor-container {
@@ -278,7 +280,7 @@ body {
       background-color: #428BCA;
       background-image: linear-gradient(to bottom, #2b9de9, #2e519b);
       border-color: #2B669A #2B669A #2B669A;
-      transition: all 0.8s ease-out 0s; }
+      transition: all 0.1s ease-out 0s; }
       #side-menu .btn-corretor-container .btn-corretor:hover {
         background: #2e519b; }
       #side-menu .btn-corretor-container .btn-corretor p {
