@@ -508,48 +508,7 @@ body{
   }//anuncio container
 }//fim do aside anuncios
 
-#detalhes-imovel{
-  padding: 0;
-  #fund{
-    position: relative;
-    top: -25px;
 
-    .borda-fotos{
-      background-color: #ededed;
-      width:100%;
-
-      border-top-left-radius:50%;
-      border-top-right-radius:50%;
-
-      .legenda-elemento{
-        padding: 2%;
-        text-align: center;
-        font-family: Gotham-Light;
-        text-transform: uppercase;
-      }
-    }
-  }
-
-
-  #linha-fotos{
-      position: relative;
-      top: -30px;
-      display: block;
-      margin-top: 0;
-      margin-bottom: 0.5em;
-      margin-left: auto;
-      margin-right: auto;
-      border-style: inset;
-      border-width: 1px;
-      border-color: #dedede;
-      opacity: 0.5;
-  }
-
-
-
-
-
-}
 
 footer{
   #rodape{
@@ -683,84 +642,139 @@ footer{
     }
   }
 }
-//
-
-//
-
-//
-// .casamodal{
-//     float: left;
-//     padding-left: 20px;
-// }
-//
-// .botoesmodal{
-//     padding: 25px;
-// }
-//
-// .botoesmodal img{
-//     float: left;
-// }
-//
-
-//
-//
-//
-//
-//
-//
-//
-// #casa{
-//     float: left;
-//
-// }
-
-//
-// a{
-//     color: #333;
-// }
-//
-// a:visited {
-//     text-decoration: none;
-// }
-//
-// a:hover {
-//     text-decoration: underline;
-//     color: #333;
-// }
-//
-// a:active {
-//     text-decoration: underline;
-// }
-//
-
-//
 
 
-//
-//
-// /*----------- PAGINA DETALHE IMOVEL ------------*/
-// /*----------- PAGINA DETALHE IMOVEL ------------*/
-//
-// /*----------- CARROUSEL ------------*/
-// .setascarrousel{
-//     padding-top: 100%;
-//
-// }
-// .tamanhocarrousel{
-//     max-width: 100%;
-//     width: 100%;
-//     max-height: 500px;
-// }
-//
-// /*----------- CARROUSEL ------------*/
-//
 
 
-//
-// #pad75{
-//     padding-left: 75px;
-//     padding-right: 75px;
-// }
+
+
+/*----------- PAGINA DETALHE IMOVEL ------------*/
+/*----------- PAGINA DETALHE IMOVEL ------------*/
+
+#detalhes-imovel{
+  padding: 0;
+  #myCarousel{
+    .carousel-indicators{
+      bottom: 40px;
+    }
+    .carousel-inner{
+      .item{
+        img{
+          width: 100%;
+          max-width: 100%;
+        }
+      }
+    }
+    .carousel-control{}
+  }//mycarousel
+  #legenda-carousel{
+    position: relative;
+    top: -30px;
+
+    .borda-fotos{
+      background-color: #ededed;
+      width:100%;
+
+      border-top-left-radius:50%;
+      border-top-right-radius:50%;
+
+      .legenda-elemento{
+        padding: 2%;
+        text-align: center;
+        font-family: Gotham-Light;
+        text-transform: uppercase;
+      }
+    }
+  }//legenda-carousel
+  #linha-fotos{
+    position: relative;
+    top: -30px;
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dedede;
+    opacity: 0.5;
+  }
+
+  #principal{
+    #info{
+      #logo-container{
+        img{}
+        #linha-interna{
+          margin-top: 0;
+          margin-bottom: 0.5em;
+          margin-left: auto;
+          margin-right: auto;
+          border-style: solid;
+          border-width: 1px;
+          border-color: #dedede;
+          opacity: 0.5;
+        }
+      }
+    }//info
+
+    #desconto{
+      .desconto-container{
+        .borda-desconto{
+          border-color:#04689a;;
+          border-style: dotted;
+          border-width: 3px;
+          border-radius: 33px;
+          text-align: center;
+          overflow: hidden;
+          #valor-desconto{
+            color: #04689a;
+            font-family: 'felipe';
+            font-size: 130px;
+            padding: 0;
+            margin: 0;
+            line-height: 130px;
+            padding-top: 30px;
+
+          }
+          #legenda-desconto{
+            color: #04689a;
+            font-family: 'felipe';
+            font-size: 35px;
+            padding: 0;
+            padding-bottom: 16px;
+            margin: 0;
+          }
+        }
+        .botao-container{
+          .btn-interesse{
+            font-family: Gotham-Bold;
+            font-size: 25px;
+            font-style: normal;
+            padding: 20px 50px;
+            color: #ffffff;
+            border-radius: 40px;
+            background-color: #428BCA;
+            background-image: linear-gradient(to bottom, #2b9de9, #2e519b);
+            border-color: #2B669A #2B669A #2B669A;
+            transition: all 0.1s ease-out 0s;
+
+            -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom,
+            from(transparent), color-stop(50%, transparent), to(rgba(255,255,255,0.6)));
+
+            &:hover {
+             background: #2e519b;
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+}//detalhes-imovel
+
+
+
 //
 // .hrazul{
 //     display: block;
@@ -812,36 +826,8 @@ footer{
 //         --padding-left: 75px;
 //     }
 //
-//     .bordadesconto{
-//         border-color:#04689a;;
-//         border-style: dotted;
-//         border-width: 3px;
-//         border-radius: 33px;
-//         text-align: center;
-//         --width: 290px;
-//         overflow: hidden;
-//
-//     }
-//
-//     #trinta{
-//         color: #04689a;
-//         font-family: 'felipe';
-//         font-size: 8rem;
-//         padding: 0;
-//         margin: 0;
-//         line-height: 81px;
-//         padding-top: 30px;
-//     }
-//
-//     #desconto{
-//         color: #04689a;
-//         font-family: 'felipe';
-//         font-size: 35px;
-//         padding: 0;
-//         padding-bottom: 16px;
-//         margin: 0;
-//
-//     }
+
+
 // }
 //
 //

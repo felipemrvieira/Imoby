@@ -525,45 +525,7 @@ body .corpo {
   z-index: 1;
 }
 
-/* line 511, estilo.scss */
-#detalhes-imovel {
-  padding: 0;
-}
-/* line 513, estilo.scss */
-#detalhes-imovel #fund {
-  position: relative;
-  top: -25px;
-}
-/* line 517, estilo.scss */
-#detalhes-imovel #fund .borda-fotos {
-  background-color: #ededed;
-  width: 100%;
-  border-top-left-radius: 50%;
-  border-top-right-radius: 50%;
-}
-/* line 524, estilo.scss */
-#detalhes-imovel #fund .borda-fotos .legenda-elemento {
-  padding: 2%;
-  text-align: center;
-  font-family: Gotham-Light;
-  text-transform: uppercase;
-}
-/* line 534, estilo.scss */
-#detalhes-imovel #linha-fotos {
-  position: relative;
-  top: -30px;
-  display: block;
-  margin-top: 0;
-  margin-bottom: 0.5em;
-  margin-left: auto;
-  margin-right: auto;
-  border-style: inset;
-  border-width: 1px;
-  border-color: #dedede;
-  opacity: 0.5;
-}
-
-/* line 555, estilo.scss */
+/* line 514, estilo.scss */
 footer #rodape {
   background-color: white;
   padding-top: 20px;
@@ -574,11 +536,11 @@ footer #rodape {
   font-weight: bold;
   font-style: italic;
 }
-/* line 565, estilo.scss */
+/* line 524, estilo.scss */
 footer #rodape #rodape-container {
   display: flex;
 }
-/* line 568, estilo.scss */
+/* line 527, estilo.scss */
 footer #rodape #rodape-container .menu-footer {
   align-self: center;
   font-family: Gotham-Light, sans-serif;
@@ -587,50 +549,156 @@ footer #rodape #rodape-container .menu-footer {
   font-size: 100%;
   font-size: 12px;
 }
-/* line 576, estilo.scss */
+/* line 535, estilo.scss */
 footer #rodape #rodape-container .menu-footer .btn-rodape {
   padding: 0;
   font-weight: inherit;
 }
-/* line 580, estilo.scss */
+/* line 539, estilo.scss */
 footer #rodape #rodape-container .menu-footer .btn-rodape:focus, footer #rodape #rodape-container .menu-footer .btn-rodape:active:focus, footer #rodape #rodape-container .menu-footer .btn-rodape.active:focus {
   outline: 0 none;
 }
-/* line 589, estilo.scss */
+/* line 548, estilo.scss */
 footer #barra-cinza {
   height: 45px;
   background-color: #F9F9F9;
 }
 
-/* line 660, estilo.scss */
+/* line 619, estilo.scss */
 .modal-content {
   border-radius: 0;
   padding: 12px;
 }
-/* line 663, estilo.scss */
+/* line 622, estilo.scss */
 .modal-content .modal-header {
   border: none;
   padding-bottom: 0;
 }
-/* line 666, estilo.scss */
+/* line 625, estilo.scss */
 .modal-content .modal-header .close {
   color: #d85600;
   opacity: 1;
   font-size: 40px;
   font-family: Gotham-Light, sans-serif;
 }
-/* line 673, estilo.scss */
+/* line 632, estilo.scss */
 .modal-content .modal-body {
   padding: 15px 40px 40px 40px;
 }
-/* line 675, estilo.scss */
+/* line 634, estilo.scss */
 .modal-content .modal-body .txtmodal {
   font-family: Gotham-Light, sans-serif;
   font-style: normal;
   text-align: justify;
 }
-/* line 679, estilo.scss */
+/* line 638, estilo.scss */
 .modal-content .modal-body .txtmodal h3 {
   font-family: Gotham;
   padding-bottom: 20px;
+}
+
+/*----------- PAGINA DETALHE IMOVEL ------------*/
+/*----------- PAGINA DETALHE IMOVEL ------------*/
+/* line 654, estilo.scss */
+#detalhes-imovel {
+  padding: 0;
+}
+/* line 657, estilo.scss */
+#detalhes-imovel #myCarousel .carousel-indicators {
+  bottom: 40px;
+}
+/* line 662, estilo.scss */
+#detalhes-imovel #myCarousel .carousel-inner .item img {
+  width: 100%;
+  max-width: 100%;
+}
+/* line 670, estilo.scss */
+#detalhes-imovel #legenda-carousel {
+  position: relative;
+  top: -30px;
+}
+/* line 674, estilo.scss */
+#detalhes-imovel #legenda-carousel .borda-fotos {
+  background-color: #ededed;
+  width: 100%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+/* line 681, estilo.scss */
+#detalhes-imovel #legenda-carousel .borda-fotos .legenda-elemento {
+  padding: 2%;
+  text-align: center;
+  font-family: Gotham-Light;
+  text-transform: uppercase;
+}
+/* line 689, estilo.scss */
+#detalhes-imovel #linha-fotos {
+  position: relative;
+  top: -30px;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #dedede;
+  opacity: 0.5;
+}
+/* line 707, estilo.scss */
+#detalhes-imovel #principal #info #logo-container #linha-interna {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #dedede;
+  opacity: 0.5;
+}
+/* line 722, estilo.scss */
+#detalhes-imovel #principal #desconto .desconto-container .borda-desconto {
+  border-color: #04689a;
+  border-style: dotted;
+  border-width: 3px;
+  border-radius: 33px;
+  text-align: center;
+  overflow: hidden;
+}
+/* line 729, estilo.scss */
+#detalhes-imovel #principal #desconto .desconto-container .borda-desconto #valor-desconto {
+  color: #04689a;
+  font-family: 'felipe';
+  font-size: 130px;
+  padding: 0;
+  margin: 0;
+  line-height: 130px;
+  padding-top: 30px;
+}
+/* line 739, estilo.scss */
+#detalhes-imovel #principal #desconto .desconto-container .borda-desconto #legenda-desconto {
+  color: #04689a;
+  font-family: 'felipe';
+  font-size: 35px;
+  padding: 0;
+  padding-bottom: 16px;
+  margin: 0;
+}
+/* line 749, estilo.scss */
+#detalhes-imovel #principal #desconto .desconto-container .botao-container .btn-interesse {
+  font-family: Gotham-Bold;
+  font-size: 25px;
+  font-style: normal;
+  padding: 20px 50px;
+  color: #ffffff;
+  border-radius: 40px;
+  background-color: #428BCA;
+  background-image: linear-gradient(to bottom, #2b9de9, #2e519b);
+  border-color: #2B669A #2B669A #2B669A;
+  transition: all 0.1s ease-out 0s;
+  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, transparent), to(rgba(255, 255, 255, 0.6)));
+}
+/* line 764, estilo.scss */
+#detalhes-imovel #principal #desconto .desconto-container .botao-container .btn-interesse:hover {
+  background: #2e519b;
 }
