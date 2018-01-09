@@ -1,27 +1,27 @@
 
 @font-face {
     font-family: Gotham;
-    src: url(fonts/'Gotham-BoldItalic.otf');
+    src: url('../fonts/Gotham-BoldItalic.otf');
 }
 
 @font-face {
     font-family: Gotham-Bold;
-    src: url(fonts/Gotham-Bold.otf);
+    src: url(../fonts/Gotham-Bold.otf);
 }
 
 @font-face {
    font-family: 'felipe';
-   src: url('fonts/Gotham-Ultra.otf');
+   src: url('../fonts/Gotham-Ultra.otf');
 }
 
 @font-face {
    font-family: Gotham-Light;
-   src: url('fonts/Gotham-Light.otf');
+   src: url('../fonts/Gotham-Light.otf');
 }
 
 @font-face {
     font-family: GBold;
-    src: url('fonts/Gotham-Bold.otf');
+    src: url('../fonts/Gotham-Bold.otf');
 }
 
 
@@ -508,6 +508,49 @@ body{
   }//anuncio container
 }//fim do aside anuncios
 
+#detalhes-imovel{
+  padding: 0;
+  #fund{
+    position: relative;
+    top: -25px;
+
+    .borda-fotos{
+      background-color: #ededed;
+      width:100%;
+
+      border-top-left-radius:50%;
+      border-top-right-radius:50%;
+
+      .legenda-elemento{
+        padding: 2%;
+        text-align: center;
+        font-family: Gotham-Light;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+
+  #linha-fotos{
+      position: relative;
+      top: -30px;
+      display: block;
+      margin-top: 0;
+      margin-bottom: 0.5em;
+      margin-left: auto;
+      margin-right: auto;
+      border-style: inset;
+      border-width: 1px;
+      border-color: #dedede;
+      opacity: 0.5;
+  }
+
+
+
+
+
+}
+
 footer{
   #rodape{
     background-color: white;
@@ -612,28 +655,38 @@ footer{
 //
 
 //
-// .modal-header{
-//     border: none;
-//     padding-bottom: 0;
-// }
+
 //
-// .modal-content{
-//     border-radius: 0;
-// }
+.modal-content{
+  border-radius: 0;
+  padding: 12px;
+  .modal-header{
+    border: none;
+    padding-bottom: 0;
+    .close{
+      color: #d85600;
+      opacity: 1;
+      font-size: 40px;
+      font-family: Gotham-Light, sans-serif;
+    }
+  }
+  .modal-body{
+    padding: 15px 40px 40px 40px;
+    .txtmodal{
+      font-family: Gotham-Light, sans-serif;
+      font-style: normal;
+      text-align: justify;
+      h3{
+        font-family: Gotham;
+        padding-bottom: 20px;
+      }
+    }
+  }
+}
 //
-// .txtmodal{
-//     font-family: Gotham-Light, sans-serif;
-//     font-style: normal;
-//     text-align: justify;
-//     padding-left: 40px;
-//     padding-right: 40px;
+
 //
-// }
-//
-// .txtmodal h3{
-//      font-family: Gotham;
-//     padding-bottom: 20px;
-// }
+
 //
 // .casamodal{
 //     float: left;
@@ -648,13 +701,7 @@ footer{
 //     float: left;
 // }
 //
-// .modal-header button.close{
-//     color: #d85600;
-//     opacity: 1;
-//     font-size: 40px;
-//     font-family: Gotham-Light, sans-serif;
-//
-// }
+
 //
 //
 //
@@ -707,43 +754,8 @@ footer{
 //
 // /*----------- CARROUSEL ------------*/
 //
-// #fund{
-//     --background-color: #c5c4c4;
-//     position: relative;
-//     top: -25px;
-// }
-//
-// .bordafotos{
-//     background-color: #ededed;
-//     width:100%;
-//
-//     border-top-left-radius:50%;
-//     border-top-right-radius:50%;
-// }
-//
-// .legendaelemento{
-//     padding: 2%;
-//     text-align: center;
-//     font-family: Gotham-Light;
-// }
-//
-// .linhainterna{
-//     display: block;
-//     width: 90%;
-//     margin-top: 0;
-//     margin-bottom: 0.5em;
-//     margin-left: auto;
-//     margin-right: auto;
-//     border-style: inset;
-//     border-width: 1px;
-//     border-color: #dedede;
-//     opacity: 0.5;
-// }
-//
-// #linhaFotos{
-//     position: relative;
-//     top: -25px;
-// }
+
+
 //
 // #pad75{
 //     padding-left: 75px;
